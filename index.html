@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature change</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./temperature_3815449.png" type="image/x-icon">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h2 class="heading">Temperature Converter By Using HTML CSS JavaScript</h2>
+    <div class="tempcontainer">
+        <label>From :
+            <select name="sel" id="select1" onchange="getOption()">
+            <option selected>Select Option</option>
+            <option value="Celcious">Celcious</option>
+            <option value="Faharenheat">Faharenheat</option>
+            <option value="Kelvins">Kelvins</option>
+        </select>
+    </label><br>
+        <label>To : 
+            <select name="sel" id="select2" onchange="getOption1()">
+                <option selected>Select Option</option>
+                <option value="Celcious">Celcious</option>
+                <option value="Faharenheat">Faharenheat</option>
+                <option value="Kelvins">Kelvins</option>
+            </select>
+        </label>
+        <div class="tempinput">
+            <label>Enter Temperature : <input type="text" id="input"></label>
+        </div>
+        <div class="btnContainer">
+            <button onclick="changeTemperature()" class="changeBtn">Change Temperature</button>
+        </div>
+        <p id="displayresult">Result : Display Here</p>
+
+        <!-- JavaScript -->
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
